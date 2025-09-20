@@ -11,14 +11,20 @@ This project cleans and standardizes student survey data exported from Google Fo
 ## Usage
 
 1. Place your raw CSV file in `data/raw/` (default: `forms_responses_12955.csv`).
-2. Run the script:
+2. Create the venv and activate it:
+   ```sh
+   python -m venv venv
+   venv/bin/activate
+   pip install requirements.txt
+   ```
+3. Run the script:
 
    ```sh
-   cd src
+   cd scripts
    python cleanup.py
    ```
 
-3. Cleaned files will be saved in `data/cleaned/`.
+4. Cleaned files will be saved in `data/cleaned/`.
 
 ## Requirements
 
